@@ -1,0 +1,48 @@
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    width:60%;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: rgb(112, 112, 112);
+}
+
+.btn{
+    background-color: #1976d2;
+}
+.btn:hover{
+    background-color: #1565c0; 
+}
+
+.small-toast{
+    width:200px;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    margin-bottom:10px;
+    padding: 10px !important;
+}
+
+input:focus {
+    border-bottom: 1px solid #1565c0 !important;
+    box-shadow: 0 1px 0 0 royalblue !important;
+  }
+
+  label.active {
+    color: #1565c0;
+  }
+

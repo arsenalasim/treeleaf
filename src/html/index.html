@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Treeleaf</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="image-container">
+
+            <div class="card-panel">
+                <div class="inputs">
+                    <div class="image-input">
+                        <div class="blue-text">Search by Image</div>
+                        <div class="input-box">
+                            <label for="file-upload" class="custom-file-upload">
+                            </label>
+                            <input id="file-upload" type="file" accept="image/*" />
+                            <img src="#" alt="ok" id="preview" class="hidden">
+                            <i class="material-icons right icon">camera_alt</i>
+                            <div class="message-text">Click here to upload images</div>
+                        </div>
+                    </div>
+                    <div class="video-input">
+                        <div class="blue-text">Search by Video</div>
+                        <div class="input-box">
+                            <label for="video-upload" class="custom-file-upload">
+                            </label>
+                            <input id="video-upload" type="file" accept="video/*" />
+
+                            <video src="#" alt="ok" id="preview" class="">
+                            </video>
+                            <i class="material-icons right icon">videocam</i>
+                            <div class="message-text">Click here to upload videos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-container">
+                    <div class="blue-text">Result </div>
+                    <div class="image-result">
+                        <div class="result-image"><input type="checkbox" id="check0" class="filled-in">
+                            <label for="check0"><img src="../../head.jpeg" alt="head"></label></div>
+
+                        <div class="result-image"><input type="checkbox" id="check" class="filled-in">
+                            <label for="check"><img src="../../head.jpeg" alt="head"></label></div>
+
+                        <div class="result-image"><input type="checkbox" id="check1" class="filled-in">
+                            <label for="check1"><img src="../../head.jpeg" alt="head"></label></div>
+
+                        <div class="result-image"><input type="checkbox" id="check2" class="filled-in">
+                            <label for="check2"><img src="../../head.jpeg" alt="head"></label></div>
+
+                        <div class="result-image"><input type="checkbox" id="check3" class="filled-in">
+                            <label for="check3"><img src="../../head.jpeg" alt="head"></label></div>
+
+                        <div class="result-image"><input type="checkbox" id="check4" class="filled-in">
+                            <label for="check4"><img src="../../head.jpeg" alt="head"></label></div>
+
+                        <div class="result-image"><input type="checkbox" id="check5" class="filled-in">
+                            <label for="check5"><img src="../../head.jpeg" alt="head"></label></div>
+
+                        <div class="result-image"><input type="checkbox" id="check6" class="filled-in">
+                            <label for="check6"><img src="../../head.jpeg" alt="head"></label></div>
+
+
+                    </div>
+                    <div class="buttons">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Search
+                            <i class="material-icons right">search</i>
+                        </button>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Preview
+                            <i class="material-icons right">image</i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MENU -->
+
+        <menu id="ctxMenu">
+
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Bye</li>
+            </ul>
+
+        </menu>
+
+        <div class="video-container">
+            <div class="card-panel">
+                <div class="result-container">
+                    <div class="blue-text">Result</div>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="test5" min="0" max="100" value="0" />
+                        </p>
+                    </form>
+                    <div class="video-result">
+                        <img src="https://cdn-images-1.medium.com/max/1600/1*GCqsG3c2Xt-d9JQGUpytpQ.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/index.js"></script>
+<script src="../assets/hammer.min.js"></script>
+<script src="../assets/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</html>

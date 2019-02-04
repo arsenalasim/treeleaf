@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:rgb(231, 231, 231)
+}
+
+.parent-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image-container,.video-container{
+    flex:1;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+}
+.card-panel{
+    border-radius: 5px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+
+}
+.input-box{
+    border:3px dashed #aaa;
+    height: 250px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #aaa;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:3px solid #aaa;
+    margin:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message-text{
+    color:#aaa;
+}
+#preview{
+    height: 100%;
+    width: 100%;
+    position: absolute
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    z-index: 999;
+}
+
+.hidden{
+    display: none;
+}
+
+.video-result,.image-result{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 250px;
+}
+#ctxMenu{
+    display:none;
+    z-index:100;
+}
+menu {
+    position:absolute;
+    display:block;
+    left:0px;
+    top:0px;
+    min-height:100px;
+    min-width:150px;
+    padding:0;
+    margin:0;   
+    background-color:rgba(0,0,0,0.7);
+    font-weight:normal;
+    white-space:nowrap;
+}
+menu>ul{
+    color: white
+}
+menu>ul>li{
+    padding: 10px;
+    width: 100%;
+}
+menu>ul>li:hover{
+    cursor: pointer;
+    background-color:rgba(0,0,0,0.9);
+}
+
+.video-result{
+    flex:1;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image-input,.video-input{
+   width: 45%;
+}
+
+
+.blue-text{
+    /* font-size: 20px; */
+    /* margin-top: 5px; */
+    
+}
+
+.video-result>img{
+    height: auto;
+    width: 100%;
+}
+.image-result{
+    overflow-y: scroll;
+}
+.result-image{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.result-image img{
+    position: absolute;
+    left: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.buttons{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.buttons>button{
+    margin: 0px 10px;
+    background-color: #1976d2;
+    flex: 1;
+
+}
+
+.buttons>button:hover{
+    background-color: #1565c0;
+
+}
+.result-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    padding: 20px;
+}
+
+
+
+
+/* RANGE STYLE */
+
+ input[type=range]::-webkit-slider-thumb {
+    background-color: #1565c0;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color: #1565c0;
+  }
+  input[type=range]::-ms-thumb {
+    background-color: #1565c0;
+  }
+
+  /***** These are to edit the thumb and the text inside the thumb *****/
+  input[type=range] + .thumb {
+    background-color: #dedede;
+  }
+  input[type=range] + .thumb.active .value {
+    color: #1565c0;
+  }
